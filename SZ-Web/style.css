@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    background-color: #EFF1ED;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.divlogo{
+    flex: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right:100%;
+    margin-left: auto;
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.menu{
+    flex-direction: row;
+    display: flex;
+    flex: 90%;
+    
+}
+
+.menu a{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 80px ;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: #3E8469 ;
+    transition: 0.5s;
+}
+
+#btnSwitch{
+    background-color: #3E8469;
+    width: 90px;
+    padding: 8px 5px;
+    border: none;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#btnSwitch img, .eclipse{
+    width: 25px;
+    height: 25px;
+    user-select: none;
+}
+
+.eclipse{
+    position: absolute;
+    background-color: white ;
+    border-radius: 50%;
+    left: 63px;
+    transition: 0.5s;
+}
+
+.eclipse:hover{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    left: 58px;
+    transition: 0.5s;
+}
+
+.subprincipal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+
+.boas-vindas {
+    padding: 60px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+} 
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #000000;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#btnComece {
+    background-color: #3E8469;
+    color: #ffffff;
+    padding: 10px 50px; 
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+
+#btnComece a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.imagem {
+    padding: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 20px;
+    background-color: #3E8469;
+
+    display: flex;
+}
+
+/*Cadastro*/
+
+.CadastroCaixa, .LoginCaixa{
+    position: absolute;
+    background-image: url("Imagens/FundoLogin.webp");
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+}
+
+.formCadastro, .formLogin{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 5px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 68%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.formLogin{
+    padding: 100px;
+}
+
+.X{
+    margin-top: 0,1%;
+    display: flex;
+    margin-left: 95%;
+}
+
+.btnHome{
+    width: 30px;
+    height: 30px;
+}
+
+.formCadastro h2, .formLogin h2{
+    font-size: 2.3em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.formCadastro input [type="email"],[type="password"], [type="tel"], [type="text"]{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+    margin-top: 3px;
+    outline: none;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+.formLogin input [type="email"],[type="password"]{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+    margin-top: 5px;
+    outline: none;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+.lblCampo{
+    margin-right: 25px;
+}
+
+.lblBottom{
+    margin-bottom: 40px;
+}
+
+.opcoes{
+    display: flex;
+}
+
+.radio{
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.radio:hover{
+    transition: 0.5s;
+    color: #3E8469;
+}
+
+.btnCadastrar, .btnEntrar{
+    background-color: #3E8469;
+    font-size: 14px;
+    color: #ffffff;
+    padding:  10px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.login{
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.page{
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #77BFA3;
+    margin: 0;
+    font-weight: 550;
+    display: inline-block;
+}
+
+/* Entrar */
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    gap: 5px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.senha{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 25px;
+    border: none;
+    display: inline-block;
+}
+
+.senha:hover{
+    transition: 0.5s;
+    color: #3E8469;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Home */
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .divlogo{
+        display: flex;
+        flex: 1%;
+        padding: 5px;
+    }
+    
+    .menu{
+        flex-direction: row;
+        display: flex;
+        flex: 99%;
+    }
+    
+    .menu a{
+        font-size: 13px;
+        padding: 20px 15px ;
+    }
+
+    #btnSwitch{
+        width: 45px;
+        padding: 8px 5px;
+    }
+    
+    #btnSwitch img, .eclipse{
+        width: 13px;
+        height: 13px;
+    }
+    
+    .eclipse{
+        left: 35px;
+    }
+
+    .subprincipal {
+        flex-direction: column;
+    }
+    
+    .boas-vindas {
+        padding: 30px;
+    } 
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+        margin-bottom: 40px;
+        margin-right: 13px;
+        margin-left: 13px;
+    }
+
+    .imagem{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #img{
+        width: 80%;
+        height: 80%;
+        padding: 30px;
+    }
+
+    /* Cadastro*/
+    
+    .formCadastro {
+        display: flex;
+        padding: 80px;
+        height: 55%;
+    }
+    
+    .X{
+        margin-left: 100%;
+    }
+    
+    .btnHome{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .formCadastro h2, .formLogin h2{
+        font-size: 1.75em;
+        margin-bottom: 0px;
+    }
+    
+    .formCadastro input[type="tel"]{
+        padding: 10px;
+        font-size: 10px;
+        margin-top: 5px;   
+        width: calc(20% - 2px);    
+        flex-direction: column;
+    }
+
+    .formCadastro input[type="text"],[type="password"]{
+        padding: 10px;
+        font-size: 10px;
+        margin-top: 5px;   
+        width: calc(42% - 5px);    
+        flex-direction: column;
+    }
+    
+    .lblCampo{
+        margin-right: 0px;
+    }
+
+    .lblBottom{
+        margin-bottom: 25px;
+    }
+    
+    .radio{
+        font-size: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .btnCadastrar, .btnEntrar{
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    
+    .login{
+        margin-top: 5px;
+    }
+
+    /*Entrar*/
+
+    .formLogin {
+        display: flex;
+        padding: 80px;
+        height: 40%;
+    }
+
+    .formLogin input[type="password"], [type="text"]{
+        padding: 10px;
+        font-size: 10px;
+        margin-top: 5px;   
+        width: calc(100% - 10px);    
+        flex-direction: row;
+    }
+
+    .senha{
+        font-size: 10px;
+    }
+
+}

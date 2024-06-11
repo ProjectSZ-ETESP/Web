@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/dadosCplt.css">
+    <link rel="shortcut icon" href="Imagens/iconpfp.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Completos</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <div class="divlogo">
+                <a href="Index.html">
+                    <img src="Imagens/logo.webp" alt="logo" class="logo" id="logotipo">
+                </a>
+            </div>
+            <div class="menu">
+                <a href="Clinicas.html" class="fonte">Clínicas</a> <br>
+                <a href="Forum.html" class="fonte">Fórum</a> <br>
+                <a href="Conta.html" class="fonte">Conta</a> <br>
+                <a href="Criacionistas.html" class="fonte">Criacionistas</a> <br>
+            </div>
+            <div class="switch">
+                <div id="btnSwitch">
+                    <div class="eclipse"></div>
+                    <img src="Imagens/light.webp" alt="sol" id="imgLight">
+                    <img src="Imagens/dark.webp" alt="lua" id="imgDark">
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="foto">
+                <a href="">
+                    <img src="Imagens/camera.webp" alt="">
+                </a>
+                <img src="Imagens/cachorra.webp" alt="">
+            </div>
+            <div class="info">
+                <h1>Bombom</h1>
+                <div class="campo">
+                    <p>Nome</p>
+                    <input type="tel" name="" id="">
+                </div>
+                <div class="campo">
+                    <p>Email</p>
+                    <input type="tel" name="" id="email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="doubleInput">
+                    <div class="campo">
+                        <p>Data de Nascimento</p>
+                        <input type="date" name="" id="date">
+                    </div>
+                    <div class="campo">
+                        <p>Sexo</p>
+                        <input maxlength="2" type="tel" name="" id="sex">
+                    </div>
+                </div>
+                <div class="doubleInput">
+                    <div class="campo">
+                        <p>Telefone</p>
+                        <input maxlength="15" type="tel" id="telefone" name="">
+                    </div>
+                    <div class="campo">
+                        <p>CPF</p>
+                        <input maxlength="14" type="tel" id="cpf" name="">
+                    </div>
+                </div>
+                <div class="actions">
+                    <a href="LoginFuncionario.html">
+                        <p>Excluir Conta</p>
+                    </a>
+                    <a class="save" href="Conta.html">
+                        <p>Salvar Alterações</p>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="ScriptSwitch.js"></script>
+    <script src="JS/maskDados.js"></script>
+
+</body>
+</html>
