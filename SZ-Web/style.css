@@ -6,14 +6,20 @@
 }
 
 body {
-    display: flex;
     background-color: #EFF1ED;
 }
 
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
+    width: 100%
+    height: 150px;
     display: flex;
     align-items: center;
-    padding: 20px;
     position: relative;
 }
 
@@ -24,11 +30,10 @@ header {
 }
 
 .logo {
-    margin-right:100%;
-    margin-left: auto;
+    margin-left: 30px;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
 }
 
 .menu{
@@ -65,11 +70,12 @@ header {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    margin-right: 40px;
 }
 
 #btnSwitch img, .eclipse{
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     user-select: none;
 }
 
@@ -102,9 +108,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    z-index: 2;
 } 
 
-h1 {
+h1.fonte {
     font-family: "Poppins", sans-serif;
     font-size: 3em;
     text-align: center;
@@ -113,26 +120,26 @@ h1 {
     margin-bottom: 15px;
 }
 
-span {
+.fonte span {
     font-weight: bold;
     font-family: "Quicksand", sans-serif;
 }
 
-p {
+p.fonte {
     font-family: "Poppins", sans-serif;
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 50px;
     color: #000000;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: 60px;
+    width: 420px;
 }
 
 #btnComece {
+    width: 250px;
+    height: 60px;
     background-color: #3E8469;
     color: #ffffff;
-    padding: 10px 50px; 
-    border-radius: 20px;
+    border-radius: 30px;
     font-size: 15px;
     border: none;
     outline: none;
@@ -141,27 +148,60 @@ p {
 }
 
 #btnComece a {
+    font-size: 1.6em;
     text-decoration: none;
     color: #ffffff;
 }
 
 .imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
     padding: 10px;
 }
 
 footer{
     width: 100%;
-    height: 20px;
+    height: 200px;
     background-color: #3E8469;
-
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 0;
+}
+
+.sobre h3, .siga h3{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.siga h3{
+    margin-left: 13px;
+}
+
+.sobre a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+}
+
+.redes{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
 }
 
 /*Cadastro*/
 
 .CadastroCaixa, .LoginCaixa{
     position: absolute;
-    background-image: url("Imagens/FundoLogin.webp");
+    background-image: url("Imagens/FundoLight.webp");
     width: 100%;
     display: flex;
     height: 100%;
@@ -172,11 +212,10 @@ footer{
     justify-items: center;
 }
 
-.formCadastro, .formLogin{
+.formCadastro, .formLogin, .formSenha{
     display: flex;
     flex-direction: column;
     padding: 80px;
-    gap: 5px;
     background-color: #ffffff;
     width: 50%;
     height: 68%;
@@ -184,8 +223,23 @@ footer{
     border-radius: 15px;
 }
 
-.formLogin{
-    padding: 100px;
+.formSenha{
+    flex-direction: column;
+    display: flex;
+    padding: 80px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cP{
+    gap: 15px;
+}
+
+.cF{
+    gap: 10px;
 }
 
 .X{
@@ -207,7 +261,7 @@ footer{
 
 }
 
-.formCadastro input [type="email"],[type="password"], [type="tel"], [type="text"]{
+.formCadastro input [type="email"],[type="password"], [type="tel"], [type="text"], [type="date"]{
     padding: 10px;
     font-size: 15px;
     border: none;
@@ -220,6 +274,18 @@ footer{
 }
 
 .formLogin input [type="email"],[type="password"]{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+    margin-top: 5px;
+    outline: none;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+.formSenha input [type="text"]{
     padding: 10px;
     font-size: 15px;
     border: none;
