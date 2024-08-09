@@ -5,12 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="Imagens/logo-light.webp" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/authStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Cadastro</title>
+
+    <style>
+        .CadastroCaixa{
+            background-image: url("Imagens/FundoLight.webp");
+        }
+    </style>
+    
 </head>
 <body>
     <div class="CadastroCaixa">
 
-        <form method="Caixa" class="formCadastro">
+        <form method="Caixa" class="formCadastro cP">
 
             <div class="X">
                     <a href="Index.html">
@@ -20,43 +30,44 @@
 
             <h2>Cadastro</h2> 
 
-            <div class="campo">
-                <input type="text" class="lblCampo" placeholder="Nome"/>
-                <input type="text" class="lblCampo" placeholder="CPF" autofocus="true"/>
-                <input type="text" class="lblCampo" placeholder="Sexo"/>
+            <div class="campo lblCampos">
+                <input type="text" class="lblCampo nome" placeholder="Nome" autofocus="true" id="nome"/>
+                
             </div>
              
-            <div class="campo">
-
-                <input type="text" class="lblCampo" placeholder="Data de Nascimento" autofocus="true"/>
-                <input type="tel" class="lblCampo" placeholder="Telefone"/>
+            <div class="campo lblCampos">
+                <input type="tel" class="lblCampo maiores" maxlength="14" placeholder="CPF" autofocus="true" id="cpf" />
+                <input type="text" class="lblCampo menores" maxlength="1" placeholder="Sexo"/>
+                
             </div>
               
-            <div class="campo">
-                <input type="text" class="lblCampo" placeholder="Email"/>
-                <input type="text" class="lblCampo" placeholder="Confirme seu email" autofocus="true"/>
+            <div class="campo lblCampos">
+                <input type="date" class="lblCampo" placeholder="Data de Nascimento" autofocus="true" id="dataNasc" />
+                <input type="tel" class="lblCampo" maxlength="15" placeholder="Telefone" id="telefone"/>
+                
             </div>
     
-            <div class="campo">
-                <input type="password" class="lblCampo lblBottom" placeholder="Senha" autofocus="true"/>
-                <input type="password" class="lblCampo" placeholder="Confirme sua senha" autofocus="true"/>
+            <div class="campo lblCampos">
+                <input type="date" class="lblCampo" placeholder="Data de Nascimento" autofocus="true" id="dataNasc" />
+                <input type="tel" class="lblCampo" maxlength="15" placeholder="Telefone" id="telefone"/>
+                
             </div>
 
-            <div class="opcoes">
-                <a href="CadastroPaciente.html"> <p class="radio">Paciente</p> </a>                   
-                <a href="CadastroFuncionario.html"> <p class="radio">Funcionário</p><a>                  
+            <div class="campo lblCampos lblMargin">
+                <input type="password" class="lblCampo" placeholder="Senha" autofocus="true" id="senha"/>
+                <input type="password" class="lblCampo" placeholder="Confirme sua senha" autofocus="true" id=confSenha/>
             </div>
            
            <button type="submit" value="Acessar" class="btnCadastrar">
-                Cadastre-se
+                <a href="Index.html">Cadastre-se</a> 
            </button>
 
                 <p class="login">Já possui uma conta? 
-                        <a href=LoginPaciente.html> <span class="page"> Login</span></a>
+                        <a href=Login.html> <span class="page"> Login</span></a>
                 </p>
         </form>
 
     </div>
-
+    <script src="JS/maskDados.js"></script>
 </body>
 </html>
