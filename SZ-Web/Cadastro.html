@@ -7,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/authStyle.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <title>Cadastro</title>
 
     <style>
         .CadastroCaixa{
-            background-image: url("Imagens/FundoLight.webp");
+            background-image: url("Imagens/fundoLight.webp");
         }
     </style>
-    
 </head>
 <body>
     <div class="CadastroCaixa">
@@ -24,7 +22,7 @@
 
             <div class="X">
                     <a href="Index.html">
-                        <img src="Imagens/home-light.webp" alt="X" class="btnHome">
+                        <img src="Imagens/homeLight.webp" alt="X" class="btnHome">
                     </a>
             </div> 
 
@@ -32,27 +30,24 @@
 
             <div class="campo lblCampos">
                 <input type="text" class="lblCampo nome" placeholder="Nome" autofocus="true" id="nome"/>
-                
             </div>
-             
+
             <div class="campo lblCampos">
                 <input type="tel" class="lblCampo maiores" maxlength="14" placeholder="CPF" autofocus="true" id="cpf" />
                 <input type="text" class="lblCampo menores" maxlength="1" placeholder="Sexo"/>
-                
+            </div>
+             
+            <div class="campo lblCampos">
+
+                <input type="date" class="lblCampo" placeholder="Data de Nascimento" autofocus="true" id="dataNasc" />
+                <input type="tel" class="lblCampo" maxlength="15" placeholder="Telefone" id="telefone"/>
             </div>
               
             <div class="campo lblCampos">
-                <input type="date" class="lblCampo" placeholder="Data de Nascimento" autofocus="true" id="dataNasc" />
-                <input type="tel" class="lblCampo" maxlength="15" placeholder="Telefone" id="telefone"/>
-                
+                <input type="text" class="lblCampo" placeholder="Email" id="email"/>
+                <input type="text" class="lblCampo" placeholder="Confirme seu email" autofocus="true" id="confEmail"/>
             </div>
     
-            <div class="campo lblCampos">
-                <input type="date" class="lblCampo" placeholder="Data de Nascimento" autofocus="true" id="dataNasc" />
-                <input type="tel" class="lblCampo" maxlength="15" placeholder="Telefone" id="telefone"/>
-                
-            </div>
-
             <div class="campo lblCampos lblMargin">
                 <input type="password" class="lblCampo" placeholder="Senha" autofocus="true" id="senha"/>
                 <input type="password" class="lblCampo" placeholder="Confirme sua senha" autofocus="true" id=confSenha/>
@@ -69,5 +64,6 @@
 
     </div>
     <script src="JS/maskDados.js"></script>
+
 </body>
 </html>
