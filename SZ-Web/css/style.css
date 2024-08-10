@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    width: 100%
+    width: 100%;
     height: 150px;
     display: flex;
     align-items: center;
@@ -197,200 +197,17 @@ footer{
     height: 50px;
 }
 
-/*Cadastro*/
-
-.CadastroCaixa, .LoginCaixa{
-    position: absolute;
-    background-image: url("Imagens/FundoLight.webp");
-    width: 100%;
-    display: flex;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-    justify-items: center;
-}
-
-.formCadastro, .formLogin, .formSenha{
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
-    background-color: #ffffff;
-    width: 50%;
-    height: 68%;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.formSenha{
-    flex-direction: column;
-    display: flex;
-    padding: 80px;
-    background-color: #ffffff;
-    width: 50%;
-    height: 50%;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.cP{
-    gap: 15px;
-}
-
-.cF{
-    gap: 10px;
-}
-
-.X{
-    margin-top: 0,1%;
-    display: flex;
-    margin-left: 95%;
-}
-
-.btnHome{
-    width: 30px;
-    height: 30px;
-}
-
-.formCadastro h2, .formLogin h2{
-    font-size: 2.3em;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px;
-
-}
-
-.formCadastro input [type="email"],[type="password"], [type="tel"], [type="text"], [type="date"]{
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    border-bottom: 1px solid black; 
-    background-color: transparent;
-    margin-top: 3px;
-    outline: none;
-    font-weight: 500;
-    font-family: "Quicksand", sans-serif;
-}
-
-.formLogin input [type="email"],[type="password"]{
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    border-bottom: 1px solid black; 
-    background-color: transparent;
-    margin-top: 5px;
-    outline: none;
-    font-weight: 500;
-    font-family: "Quicksand", sans-serif;
-}
-
-.formSenha input [type="text"]{
-    padding: 10px;
-    font-size: 15px;
-    border: none;
-    border-bottom: 1px solid black; 
-    background-color: transparent;
-    margin-top: 5px;
-    outline: none;
-    font-weight: 500;
-    font-family: "Quicksand", sans-serif;
-}
-
-.lblCampo{
-    margin-right: 25px;
-}
-
-.lblBottom{
-    margin-bottom: 40px;
-}
-
-.opcoes{
-    display: flex;
-}
-
-.radio{
-    font-size: 15px;
-    color: black;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.radio:hover{
-    transition: 0.5s;
-    color: #3E8469;
-}
-
-.btnCadastrar, .btnEntrar{
-    background-color: #3E8469;
-    font-size: 14px;
-    color: #ffffff;
-    padding:  10px;
-    width: 130px;
-    border-radius: 25px;
-    font-weight: 600;
-    border: none;
-    margin-top: 5px;
-    font-family: "Poppins", sans-serif;
-}
-
-.login{
-    font-size: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    margin-top: 0px;
-}
-
-.page{
-    font-size: 10px;
-    font-family: "Poppins", sans-serif;
-    color: #77BFA3;
-    margin: 0;
-    font-weight: 550;
-    display: inline-block;
-}
-
-/* Entrar */
-
-.formLogin {
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
-    gap: 5px;
-    background-color: #ffffff;
-    width: 50%;
-    height: 50%;
-    align-items: center;
-    border-radius: 15px;
-}
-
-.senha{
-    font-size: 13px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: #000000;
-    margin-bottom: 25px;
-    border: none;
-    display: inline-block;
-}
-
-.senha:hover{
-    transition: 0.5s;
-    color: #3E8469;
-}
 
 @media only screen and (max-width: 600px) {
 
     /* Home */
 
+    header {
+        height: 100px;
+    }
+    
     .logo {
-        width: 40px;
-        height: 40px;
+        display: none;
     }
 
     .divlogo{
@@ -413,6 +230,7 @@ footer{
     #btnSwitch{
         width: 45px;
         padding: 8px 5px;
+        margin-right: 20px;
     }
     
     #btnSwitch img, .eclipse{
@@ -432,110 +250,67 @@ footer{
         padding: 30px;
     } 
     
-    h1 {
+    h1.fonte {
         font-size: 2em;
+        margin-top: 0px;
+        
     }
     
-    p {
+    p.fonte {
         font-size: 1em;
         margin-bottom: 40px;
-        margin-right: 13px;
-        margin-left: 13px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
     }
 
     .imagem{
-        display: block;
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 0px;
+        opacity: 40%;        
     }
 
     #img{
-        width: 80%;
-        height: 80%;
-        padding: 30px;
+        width: 100%;
+        height: 100%;
+
     }
 
-    /* Cadastro*/
-    
-    .formCadastro {
-        display: flex;
-        padding: 80px;
-        height: 55%;
+    #btnComece {
+        width: 170px;
+        height: 45px;
     }
     
-    .X{
-        margin-left: 100%;
-    }
-    
-    .btnHome{
-        width: 20px;
-        height: 20px;
-    }
-    
-    .formCadastro h2, .formLogin h2{
-        font-size: 1.75em;
-        margin-bottom: 0px;
-    }
-    
-    .formCadastro input[type="tel"]{
-        padding: 10px;
-        font-size: 10px;
-        margin-top: 5px;   
-        width: calc(20% - 2px);    
-        flex-direction: column;
+    #btnComece a {
+        font-size: 1.2em;
     }
 
-    .formCadastro input[type="text"],[type="password"]{
-        padding: 10px;
-        font-size: 10px;
-        margin-top: 5px;   
-        width: calc(42% - 5px);    
-        flex-direction: column;
+    footer{
+        height: 150px;
     }
     
-    .lblCampo{
-        margin-right: 0px;
-    }
-
-    .lblBottom{
-        margin-bottom: 25px;
-    }
-    
-    .radio{
-        font-size: 13px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 5px;
+    .sobre h3, .siga h3{
+        font-size: 1em;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        
     }
     
-    .btnCadastrar, .btnEntrar{
-        font-size: 12px;
-        font-weight: 600;
-        margin-top: 10px;
+    .siga h3{
+        margin-left: 3px;
+        margin-right: 3px;
     }
     
-    .login{
+    .sobre a{
+        font-size: 0.8em;
+    }
+    
+    .redes{
         margin-top: 5px;
-    }
-
-    /*Entrar*/
-
-    .formLogin {
-        display: flex;
-        padding: 80px;
-        height: 40%;
-    }
-
-    .formLogin input[type="password"], [type="text"]{
-        padding: 10px;
-        font-size: 10px;
-        margin-top: 5px;   
-        width: calc(100% - 10px);    
-        flex-direction: row;
-    }
-
-    .senha{
-        font-size: 10px;
+        width: 25px;
+        height: 25px;
     }
 
 }
