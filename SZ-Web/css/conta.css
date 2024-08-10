@@ -1,38 +1,33 @@
 .containPerfil{
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 70vh;
     background-color: white;
     border-radius: 5vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .fotopfp{
     display: flex;
     align-items: center;
-    flex: 30%;
-}
-
-.fotopfp img{
-    width: 80%;
 }
 
 .info{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 70%;
+    text-align: left;
+    flex-direction: column; 
+    height: 50%;
 }
 
-.info h1{
-    margin-left: 2vh;
+ .info h1{
+    margin-left: 0px;
     font-size: 1.8em;
-}
+} 
 
 .info a{
     font-family: "Poppins", sans-serif;
-
-    margin: 5vh;
+    margin: 7vh;
     font-size: 1.5em;
     text-decoration: none;
     color: black;
@@ -46,6 +41,92 @@
 
 }
 
-.info h1 span{
-    font-weight: lighter;
+h1.tlt{
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 15px;
+}
+
+.perfil span{
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+.info p{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.editar{
+    margin-bottom: 245px;
+}
+
+.botao{
+    height: 50px;
+    width: 130px;
+    background-color: #3E8469;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+
+.botao a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .containPerfil{
+        width: 90%;
+        height: 85vh;
+        flex-direction: column;
+    }
+    
+    .fotopfp img{
+        width: 25vh;
+        height: 25vh;
+        margin: 20px;
+        width: 100%;
+    }
+    
+     .info h1{
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    } 
+    
+    .info a{
+        margin: 7vh;
+        font-size: 18px;
+    }
+    
+    .info .tlt{
+        font-size: 2.6em;
+    }
+    
+    .info p{
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+
+    }
+    
+    .botao{
+        height: 50px;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    a.size{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
