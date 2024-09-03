@@ -1,0 +1,85 @@
+<?php
+    session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Imagens/logoLight.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Empresa</title>
+</head>
+<body>
+
+    <div class="principal">
+        
+        <header>
+            <div class="divlogo">
+                <a href="Index.php">  
+                    <img src="Imagens/logoLight.webp" alt="logo" class="logo" id="logotipo">
+                </a>
+            </div>
+            
+            <div class="menu">
+                <a href="Clinicas.html" class="fonte">Clínicas</a> <br>
+                <a href="Consultas.php" class="fonte">Consultas</a> <br>
+                <a href="Conta.php" class="fonte">Conta</a> <br>
+                <a href="Perguntas.php" class="fonte">FAQ</a> <br>
+            </div>
+
+            <div class="switch">
+                <div id="btnSwitch">
+                        <div class="eclipse"> 
+                        </div>
+                        <img src="Imagens/light.webp" alt="sol" id="imgLight">
+                        <img src="Imagens/dark.webp" alt="lua" id="imgDark">
+                </div>
+            </div>
+
+        </header>
+
+        <div class="subprincipal">
+
+            <div class="imagem">
+                <img src="Imagens/criacionistas.webp" alt="templo" id="img">
+            </div>
+
+            <div class="boas-vindas">
+                <h1 class="fonte">Sobre os <br><span>Criacionistas</span></h1>
+                <p class="fonte">
+                    Os Criacionistas é um empresa com foco em Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat.
+                </p>
+            </div>
+
+        </div>
+
+        <footer class="botao">
+                <div class="sobre">
+                    <h3>Sobre nós</h3>
+                    <a href="Criacionistas.php">Criacionistas</a> <br>
+                    <a href="Perguntas.php">FAQ</a> <br>
+                </div>
+
+                <div class="siga">
+                    <h3>Siga-nos</h3>
+                    <a href="instagram.com">
+                        <img src="Imagens/instagram.webp" class="redes" alt="Logo do Instagram">
+                    </a>
+                    <a href="github.com">
+                        <img src="Imagens/github.webp" class="redes" alt="Logo do Github">
+                    </a>
+                </div>
+        </footer>
+        
+    </div>
+    <script src="JS/switch.js"></script>
+</body>
+</html>
