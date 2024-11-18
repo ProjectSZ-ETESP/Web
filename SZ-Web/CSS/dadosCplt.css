@@ -1,0 +1,415 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.329);
+    background-color: #ffffff;
+    width: 80%;
+    border-radius: 5vh;
+    padding: 20px;
+    margin-bottom: 10vh;
+}
+
+.subcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#switchPfp{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: -120px;
+    margin-top: -24px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    background-color: #3E8469;
+}
+#switchPfp:hover{
+    cursor: pointer;
+}
+
+#switchPfp img{
+    width: 35px;
+    height: 35px;
+}
+
+#msgErro{
+    color: red;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+#pfpMenu{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000069;
+    z-index: 1000;
+    align-items: center;
+}
+
+#pfpNum{
+    display: none;
+}
+
+#pfpChoices{
+    width: 70%;
+    height: 550px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+#pfpChoices h2{
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pfpRow{
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.pfpRow img{
+    width: 20vh;
+    height: 20vh;
+    border-radius: 100%;
+}
+.pfpRow img:hover{
+    cursor: pointer;
+}
+
+.pfpRow button{
+    width: 170px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    background-color: #3E8469;
+    border: none;
+    color: white;
+}
+    .pfpRow button:hover{
+        cursor: pointer;
+    }
+
+.subcontainer a{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    top: 48%; /* Centraliza verticalmente */
+    left: 23%; 
+    border-radius: 100%;
+    border: none;
+    background-color: #3E8469;
+}
+
+.subcontainer a img{
+    width: 60%;
+    height: 50%;
+}
+
+h1.Edição{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 6vh;
+}
+
+.foto{
+    width: 25%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.foto img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+
+.foto a{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 6vh;
+    height: 6vh;
+    top: 70%; /* Centraliza verticalmente */
+    left: 68%; 
+    border-radius: 100%;
+    border: none;
+    background-color: #3E8469;
+}
+
+.foto a img{
+    width: 4vh;
+    height: 4vh;
+}
+
+.info{
+    width: 75%;
+    margin-top: 10vh;
+}
+
+.info p{
+    color: #9E9292;
+}
+
+.formEditar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formEditar input{
+    padding: 2px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+    margin-top: 3px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+#nome, #email, #dataNasc, #sex, #telefone, #cpf {
+    width: 100%;
+}
+
+.doubleInput{
+    display: flex;
+    width: 85%;
+    margin-left: 0;
+    margin-bottom: 3vh;
+}
+
+#dataNasc{
+    padding: 0;
+}
+
+
+.actions{
+    width: 100%;
+    display: flex;
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.actions p{
+    margin: 0;
+    color: #3E8469;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.btnExcluir {
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    background: none;
+    font-family: "Poppins", sans-serif;
+    color: #3E8469;
+}
+    .btnExcluir:hover {
+        cursor: pointer;
+    }
+
+.btnAtualizar {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    background: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background-color: #3E8469;
+}
+    .btnAtualizar:hover {
+        cursor: pointer;
+    }
+
+#sexo {
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid white;
+    border-bottom: 1px solid black;
+    margin-top: 3px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-family: "Quicksand", "sans-serif";
+}
+
+.actions a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 35px;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.campos {
+    width: 100%;
+}
+
+.campos, .campoEsquerdo, .campoDireito{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+}
+
+.campoEsquerdo, .campoDireito{
+    width: 35%;
+}
+
+.campoDireito{
+    margin-right: 0;
+}
+
+.campos p, .campoEsquerdo p, .campoDireito p{
+    margin-bottom: 0;
+    margin-left: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        margin-bottom: 30px;
+    }
+
+    .subcontainer{
+        flex-direction: column;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .subcontainer a{
+        width: 36px;
+        height: 36px;
+        top: 32%; /* Centraliza verticalmente */
+        left: 57%; 
+    }
+
+    #switchPfp{
+        width: 50px;
+        height: 50px;
+        margin-left: 220px;
+        margin-top: -45px;
+    }
+
+    #switchPfp img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    #pfpChoices{
+        padding: 20px;
+        width: 80%;
+        height: 450px;
+    }
+    
+    #pfpChoices h2{
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .pfpRow{
+        width: 100%;
+        height: 20%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .pfpRow img{
+        width: 10vh;
+        height: 10vh;
+    }
+    
+    .pfpRow button{
+        width: 140px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    h1.Edição{
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .foto{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .foto img{
+        width: 23vh;
+        height: 23vh;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .info p{
+        font-size: 15px;
+    }
+    
+    .formEditar input{
+        font-size: 15px;
+    }
+    
+    #dataNasc{
+        width: 120%;
+    }
+    
+    .doubleInput{
+        width: 90%;
+    }
+    
+    .actions p{
+        font-size: 14px;
+    }
+    
+    .save p{
+        font-size: 14px;
+    }
+    
+    .actions a{
+        height: 30px;
+        padding: 5px 20px;
+    }
+
+}

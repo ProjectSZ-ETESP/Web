@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0 auto;
+}
+
+body {
+    background-color: #EFF1ED;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00866b;
+  }
+
+.principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.divlogo{
+    flex: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 30px;
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+
+.menu{
+    flex-direction: row;
+    display: flex;
+    flex: 90%;
+    
+}
+
+.menu a{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 80px ;
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: #3E8469 ;
+    transition: 0.5s;
+}
+
+#btnSwitch{
+    background-color: #3E8469;
+    width: 90px;
+    padding: 8px 5px;
+    border: none;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 40px;
+}
+    #btnSwitch:hover {
+        cursor: pointer;
+    }
+
+#btnSwitch img, .eclipse{
+    width: 26px;
+    height: 26px;
+    user-select: none;
+}
+
+.eclipse{
+    position: absolute;
+    background-color: white ;
+    border-radius: 50%;
+    left: 63px;
+    transition: 0.5s;
+}
+
+.eclipse:hover{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    left: 58px;
+    transition: 0.5s;
+}
+
+.subprincipal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.boas-vindas {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    z-index: 2;
+    flex: 1;
+} 
+
+h1.fonte {
+    font-family: "Poppins", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.fonte span {
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+p.fonte {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: #000000;
+    margin: 60px;
+    width: 420px;
+}
+
+#btnComece {
+    width: 250px;
+    height: 60px;
+    background-color: #3E8469;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+    #btnComece:hover {
+        cursor: pointer;
+    }
+
+#mainImage {
+    z-index: 1;
+    width: 50%;
+    margin-right: 110px;
+}
+
+.segundario, .terciario, .quartenario, .quintenario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.segundario, .quintenario{
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.segundario{
+    margin-bottom: 80px;
+}
+
+.quartenario{
+    margin-right: 7%;
+}
+
+.desenho1, .desenho2, .desenho3{
+    z-index: 1;
+}
+
+.desenho1{
+    width: 38%;
+}
+
+.desenho2{
+    width: 25%;
+}
+
+#desenho3{
+    width: 45%;
+}
+
+.textos{
+    align-items: center;
+    margin-left: 15%;
+}
+
+.textao{
+    align-items: center;
+    margin-left: 4%;
+}
+
+p#textos{
+    width: 90%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2{
+    font-weight: 900;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.texto{
+    width: 45%;
+    margin-left: 30px;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #3E8469;
+}
+
+.linha{
+    flex-direction: row;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.copyright{
+    display: flex;
+}
+
+.font{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.barra{
+    width: 100%;
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #000000;
+}
+
+.sobre, .siga{
+    flex: 1;
+}
+
+.sobre h3, .siga h3{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3em;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.siga h3{
+    margin-left: 13px;
+}
+
+.sobre a, .contatos a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1em;
+}
+
+.redes{
+    height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Home */
+
+    header {
+        height: 100px;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .divlogo{
+        display: flex;
+        flex: 1%;
+        padding: 5px;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu{
+        flex-direction: row;
+        display: flex;
+        flex: 99%;
+    }
+    
+    .menu a{
+        font-size: 13px;
+        padding: 20px 15px ;
+    }
+
+    #btnSwitch{
+        width: 45px;
+        padding: 8px 5px;
+        margin-right: 20px;
+    }
+    
+    #btnSwitch img, .eclipse{
+        width: 13px;
+        height: 13px;
+    }
+    
+    .eclipse{
+        left: 35px;
+    }
+
+    .subprincipal {
+        margin-bottom: 60px;
+    }
+
+    .boas-vindas {
+        width: 100%;
+        padding: 0;
+        margin-left: none;
+        margin-top: 40px;
+    } 
+    
+    h1.fonte {
+        font-size: 2.2em;
+        margin-top: 0px;
+        
+    }
+    
+    p.fonte {
+        font-size: 13px;
+        margin-bottom: 40px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    #mainImage{
+        position: absolute;
+        height: auto;
+        width: 85%;
+        margin-bottom: 0px;
+        opacity: 40%;
+    }
+
+    #btnComece {
+        width: 170px;
+        height: 45px;
+        font-size: 1.2em;
+        margin-top: 5vh;
+    }
+
+    .segundario, .terciario, .quartenario, .quintenario{
+        flex-direction: column;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    
+    .segundario,.terciario, .quartenario, .quintenario{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    
+    .desenho1, .desenho2, .desenho3{
+        width: 40%;
+        position: absolute;
+        height: auto;
+        opacity: 40%;
+    }
+
+    #desenho3{
+        width: 100%;
+    }
+    
+    .textos{
+        margin-left: 0;
+    }
+    
+    .textao{
+        margin-left: 0;
+    }
+    
+    p#textos{
+        width: 100%;
+        text-align: justify;
+        margin-top: 10px;
+    }
+    
+    h2{
+        font-size: 25px;
+    }
+    
+    .texto{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer{
+        margin-top: 100px;
+        height: 200px;
+    }
+
+    .linha{
+        flex-direction: row;
+        margin-top: none;
+        margin-bottom: none;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .sobre{
+        flex: 45%;
+    }
+
+    .siga{
+        flex: 65%;
+    }
+    
+    .sobre h3, .siga h3{
+        font-size: 1em;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    
+    .siga h3{
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .font{
+        font-size: 10px;
+    }
+    
+    .sobre a, .contatos a{
+        font-size: 10px;
+    }
+    
+    .redes{
+        margin-top: 5px;
+        width: 15px;
+        height: 15px;
+    }
+}

@@ -1,0 +1,160 @@
+/*ESQUECI A SENHA*/
+
+.SenhaCaixa{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-items: center;
+}
+
+.formSenha{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background-color: #6A876E;
+    width: 47%;
+    height: 53%;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.formSenha p{
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 1em;
+}
+
+.cP{
+    gap: 15px;
+}
+
+.cF{
+    gap: 10px;
+}
+
+.X{
+    display: flex;
+    margin-right: 95%;
+}
+
+.btnHome{
+    width: 30px;
+    height: 30px;
+}
+
+.formSenha h2, h3{
+    font-size: 2.0em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.formEmailCpf input ,[type="email"] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    background-color: #98a398;
+    border-radius: 14px;
+    margin-top: 3px;
+    outline: none;
+    width: 30em;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+}
+
+.formEmailCpf input [type="text"]{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px solid black; 
+    background-color: transparent;
+    margin-top: 3px;
+    outline: none;
+    width: 34%;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+
+.btnAvancar{
+    background-color: #ffffff;
+    font-size: 16px;
+    padding:  10px;
+    width: 130px;
+    border-radius: 25px;
+    font-weight: 600;
+    border: none;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #224A28;
+}
+
+.btnAvancar{
+    text-decoration: none;
+}
+
+.btnAvancar a {
+    text-decoration: none;
+    color: #224A28;
+}
+
+.Logo{
+    margin-top: -60px;
+    display: flex;
+    position: static;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .formSenha{ 
+        width: 55%;
+    }
+    
+    .formSenha p{
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+    
+    .btnHome{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .formSenha h2, h3{
+        font-size: 1.3em;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    
+    .formEmailCpf input ,[type="email"] {
+        font-size: 15px;
+        align-items: center;
+        width: 250px;
+    }
+    
+    .formEmailCpf input [type="text"]{
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        width: 34%;
+    }
+    
+    .btnAvancar{
+        font-size: 15px;
+    }
+    
+    .Logo{
+        margin-top: -30px;
+    }
+    .Logo img{
+        width: 70px;
+        height: 70px;
+    }
+}

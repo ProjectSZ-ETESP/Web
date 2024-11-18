@@ -1,0 +1,66 @@
+h2{
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ficha{
+    background-color: #ffffff;
+    box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.329);
+    width: 90%;
+    margin-bottom: 50px;
+    height: auto;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+p.data{
+    text-align: right;
+    width: 100%;
+}
+
+p.dados{
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h2{
+        font-size: 20px;
+        margin-bottom: 35px;
+    }
+    
+    .ficha{
+        width: 80%;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+    
+    p.data{
+        text-align: right;
+    }
+    
+    p.dados{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    #histUser {
+        width: 75%;
+    }
+}
